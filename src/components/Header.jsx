@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/Header.css"
 
 const Header = () => {
+    const [profil, setProfil] = useState(false);
+    const handleClick = ()=>{
+        setProfil((prevStat)=>!prevStat);
+    }
     return(
         <div>
             <header>
@@ -16,14 +20,24 @@ const Header = () => {
                 </nav>
                 <div className="span">
                     <ul>
-                        <li><span class="material-symbols-outlined">search</span>
+                        <li>
+                            <span class="material-symbols-outlined">search</span>
                         </li>
                         <li>
-                        <span class="material-symbols-outlined">favorite</span>
+                            <span class="material-symbols-outlined">favorite</span>
                         </li>
-                        <li><span class="material-symbols-outlined">shopping_cart</span>
+                        <li>
+                            <span class="material-symbols-outlined">shopping_cart</span>
                         </li>
-                        <li>Profil <span></span></li>
+                        <li>
+                            <span class="material-symbols-outlined" onClick={handleClick}>person</span>
+                            <ul className={profil ?"active":""}>
+                                <li>Profil</li>
+                                <li>Commande</li>
+                                <li>Moyen de paiement</li>
+                                <li>Paramètres</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </header>
