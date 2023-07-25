@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Chargement from './pages/Chargement';
+import PageConnexion from './pages/PageConnexion';
+import Connexion from './pages/Connexion';
+import Inscription from './pages/Inscription';
+import Mdp from './pages/Mdp';
+import Accueil from './pages/Accueil';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Routes>
+        <Route path='/' Component={Chargement}/>
+        <Route path='/PageConnexion' Component={PageConnexion}/>
+        <Route path='/connexion' Component={Connexion}/>
+        <Route path='/inscription' Component={Inscription}/>
+        <Route path='/mdp' Component={Mdp}/>
+        <Route path='/accueil' Component={Accueil}/>
+      </Routes>
     </div>
   );
 }
