@@ -55,6 +55,7 @@ const Produits = () => {
             setTotal((prevTotal) => prevTotal - parseFloat(price) );
         }
     }
+    
     // Fonction pour changer la langue
     const toggleLanguage = () => {
         // Mettre à jour la langue en fonction de la langue actuelle
@@ -72,10 +73,7 @@ const Produits = () => {
     //     id_restaurant: '522995',
     //     locale: 'en_US'
     //     },
-    //     headers: {
-    //     'X-RapidAPI-Key': 'f3923651bcmsha1c4f38d3c7e587p10186ajsn5efb532fd6d1',
-    //     'X-RapidAPI-Host': 'the-fork-the-spoon.p.rapidapi.com'
-    //     }
+    //     
     // };
     // useEffect(() => {
     //     const fetchMenu = async () =>{
@@ -281,7 +279,7 @@ const Produits = () => {
                                 {addedItems.map((item, index) => (
                                     <article >
                                         <div className="products">
-                                            <img src={item.imageUrl} alt={`Image de ${item.title}`} />
+                                            <img src={item.imageUrl} alt={`Produit de ${item.title}`} />
                                             <div>
                                                 <h5>{messages["dishe"] + item.title}</h5>
                                                 <p>{messages["price"]} : {item.price + "€"}</p>
@@ -301,7 +299,7 @@ const Produits = () => {
                             
                             <div className="paiement">
                                 <input type="text" placeholder={messages["promo"]} />
-                                <button type="button" className="btnPaye">{messages["payN"]}</button>
+                                <Link to={"/accueil/paiement"} className="btnPaye">{messages["payN"]}</Link>
                             </div>
                         </section>
                     </div>

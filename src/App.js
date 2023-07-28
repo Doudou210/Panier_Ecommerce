@@ -6,6 +6,7 @@ import Connexion from './pages/Connexion';
 import Inscription from './pages/Inscription';
 import Mdp from './pages/Mdp';
 import Accueil from './pages/Accueil';
+import Paiement from './pages/Paiement';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/inscription' Component={Inscription}/>
         <Route path='/mdp' Component={Mdp}/>
         <Route path='/accueil' Component={Accueil}/>
+        <Route path='/accueil/paiement' Component={Paiement}/>
       </Routes>
     </div>
   );
