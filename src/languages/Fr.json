@@ -1,0 +1,46 @@
+{
+    "home": "Accueil",
+    "dishes": "Plats",
+    "menu": "Menu",
+    "order": "Commande",
+
+    "profile": "Profil",
+    "orders": "Commande",
+    "payment_methods": "Moyen de paiement",
+    "settings": "Paramètres",
+
+    "add" : "Ajouter",
+    "card": "Votre Panier",
+    "price" :"Prix",
+    "quantity" : "Quantité",
+    "dishe": "Plat ",
+    "promo": "Code promotionnel",
+    "payN":"Payer maintenant",
+
+    "about": "À propos",
+    "about_us": "À propos de nous",
+    "media": "Médias",
+    "blog": "Blog",
+
+    "top_cuisines": "Meilleures Cuisines",
+    "bengali": "Bengali",
+    "japanese": "Japonais",
+    "chinese": "Chinois",
+    "italian": "Italien",
+    "thai": "Thaïlandais",
+
+    "need_help": "Besoin d'aide",
+    "questions": "Vous avez des questions ?",
+    "cancel_order": "Comment annuler une commande",
+    "pay": "Comment payer",
+    "orderC": "Comment commander",
+    "delivery": "Livraison",
+    "payment_mode": "Modes de paiement",
+
+    "newsletter_follow_us": "Bulletin d'information et suivez-nous",
+    "facebook": "Facebook",
+    "snapchat": "Snapchat",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "pinterest": "Pinterest"
+}

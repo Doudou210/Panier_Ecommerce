@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect,useState } from 'react';
 import '../css/Essaie.css'
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,16 @@ const MyComponent = () => {
   const [time, setTime] = useState(false);
   const [isClicked2, setIsCliked2] = useState(false);
   const [isLoggedIn] = useState(()=>false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(()=>{
+      const handleScroll = ()=>{
+          setIsScrolled(window.scrollY > 0)
+      }
+      window.addEventListener('scroll', handleScroll);
+      return()=>{
+          window.removeEventListener('scroll', handleScroll);
+      };
+  },[])
   
   const handleClick = ()=>{
     //prevState pour definir l'etat
@@ -34,6 +44,7 @@ const MyComponent = () => {
   
   return (
     <div>
+      <header className={isScrolled? "scrolled" : ""}></header>
       {message}
       <h1 onClick={handleClick2} className={isClicked2 ? 'clicke':''}>
         {isClicked2 ? "Merci pour votre achat":"Bienvenue sur le site"}

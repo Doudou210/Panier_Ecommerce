@@ -1,0 +1,42 @@
+{
+    "home": "Inicio",
+    "dishes": "Platos",
+    "menu": "Menú",
+    "order": "Ordenar",
+  
+    "profile": "Perfil",
+    "orders": "Órdenes",
+    "payment_methods": "Métodos de Pago",
+    "settings": "Ajustes",
+  
+    "price": "100€",
+    "some" : "Ir a algún lugar",
+  
+    "about": "Acerca de",
+    "about_us": "Sobre Nosotros",
+    "media": "Medios",
+    "blog": "Blog",
+  
+    "top_cuisines": "Cocinas principales",
+    "bengali": "Bengalí",
+    "japanese": "Japonés",
+    "chinese": "Chino",
+    "italian": "Italiano",
+    "thai": "Tailandés",
+  
+    "need_help": "Necesitas Ayuda",
+    "questions": "¿Tienes preguntas?",
+    "cancel_order": "Cómo cancelar una orden",
+    "pay": "Cómo pagar",
+    "orderC": "Cómo hacer un pedido",
+    "delivery": "Entrega",
+    "payment_mode": "Métodos de Pago",
+  
+    "newsletter_follow_us": "Boletín y Síguenos",
+    "facebook": "Facebook",
+    "snapchat": "Snapchat",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "pinterest": "Pinterest"
+  }
+  

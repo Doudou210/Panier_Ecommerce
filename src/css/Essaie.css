@@ -15,3 +15,12 @@ h1.clicke{
     transition: background 1s ease-in-out;
     color: green;
 }
+
+header.scrolled{
+    display: flex;
+    padding: 1em;
+    width: 90%;
+    background: transparent;
+    position: fixed;
+    margin: 0 auto;
+}
