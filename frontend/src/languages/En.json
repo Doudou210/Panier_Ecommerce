@@ -1,0 +1,65 @@
+{
+  
+  "home": "Home",
+  "dishes": "Dishes",
+  "menu": "Menu",
+
+  "profile": "Profile",
+  "orders": "Orders",
+  "payment_methods": "Payment Methods",
+  "settings": "Settings",
+
+  "add" : "add",
+  "cart": "Your Cart",
+  "price" :"Price",
+  "quantity" : "Quantity",
+  "dishe": "Dishe ",
+  "promo": "Promo code",
+  "payN":"Pay now",
+  "delete": "Delete",
+  "lang": "Change language to",
+
+  "about": "About",
+  "about_us": "About Us",
+  "media": "Media",
+  "blog": "Blog",
+
+  "top_cuisines": "Top Cuisines",
+  "bengali": "Bengali",
+  "japanese": "Japan",
+  "chinese": "Chinese",
+  "italian": "Italian",
+  "thai": "Thai",
+
+  "need_help": "Need Help",
+  "questions": "You have questions?",
+  "cancel_order": "How to cancel an order",
+  "pay": "How to pay",
+  "orderC": "How to order",
+  "delivery": "Delivery",
+  "payment_mode": "Payment Method",
+
+  "newsletter_follow_us": "Newsletter and Follow Us",
+  "facebook": "Facebook",
+  "snapchat": "Snapchat",
+  "instagram": "Instagram",
+  "twitter": "Twitter",
+  "pinterest": "Pinterest",
+
+  "step1": "Step 1",
+  "step2": "Step 2",
+  "previous": "Previous",
+  "validate_payment": "Validate Payment",
+  "confirm": "Confirm",
+  "email": "Email",
+  "phone": "Phone Number",
+  "address": "Address",
+  "optional": "(Optional)",
+  "city": "City",
+  "zipCode": "Zip Code",
+  "region": "Region",
+  "next_step": "Next Step",
+  "shipping_address": "Shipping Address",
+  "card": "Card"
+}
+  
