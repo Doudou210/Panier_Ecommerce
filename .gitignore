@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#db pg
+/backend/server.js
+/backend/node_modules
+/backend/.env
