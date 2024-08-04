@@ -5,7 +5,7 @@ import enMessages from "../languages/En.json";
 // import itMessages from "../languages/It.json";
 import frMessages from "../languages/Fr.json";
 
-const Produits = ({options}) => {
+const Produits = () => {
     //Pour l'API
 
     //Pour les produits
@@ -64,7 +64,6 @@ const Produits = ({options}) => {
     }
     return(
         <div>
-            
             <div className="container">
                 <div className="produit add">
                     <div className="card">
@@ -134,7 +133,7 @@ const Produits = ({options}) => {
                             <button className="btn btn-primary"
                                 onClick={()=>
                                     addToItems(
-                                        "food6",
+                                        "food5",
                                         5,
                                         "https://placehold.co/1200x1200",
                                     )}>{messages["add"]}
@@ -164,7 +163,7 @@ const Produits = ({options}) => {
                             <button className="btn btn-primary" 
                                  onClick={()=>
                                     addToItems(
-                                        "food6",
+                                        "food7",
                                         7,
                                         "https://placehold.co/1200x1200",
                                     )}>{messages["add"]}
@@ -186,182 +185,21 @@ const Produits = ({options}) => {
                             </button>
                         </div>
                     </div>
-                    {/* {firstFoodItem &&
-                        <div className="card" key={firstFoodItem}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem?.title || firstFoodItem?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem.image} alt={firstFoodItem?.title}  />
-                                <p className="card-text">{firstFoodItem.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem.title,
-                                                10,
-                                                firstFoodItem.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title">Food9 </h5>
+                            <img className="card-img-top" src="https://placehold.co/1200x1200" alt="Food8"/>
+                            <p className="card-text">9€</p>
+                            <button className="btn btn-primary" 
+                                 onClick={()=>
+                                    addToItems(
+                                        "food9",
+                                        9,
+                                        "https://placehold.co/1200x1200",
+                                    )}>{messages["add"]}
+                            </button>
                         </div>
-                    }
-                    {firstFoodItem1 &&
-                        <div className="card" key={firstFoodItem1}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem1?.title || firstFoodItem1?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem1.image} alt={firstFoodItem1?.title}  />
-                                <p className="card-text">{firstFoodItem1.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem1.title,
-                                                10,
-                                                firstFoodItem1.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem2 &&
-                        <div className="card" key={firstFoodItem2}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem2?.title || firstFoodItem2?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem2.image} alt={firstFoodItem2?.title}  />
-                                <p className="card-text">{firstFoodItem2.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem2.title,
-                                                10,
-                                                firstFoodItem2.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem3 &&
-                        <div className="card" key={firstFoodItem3}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem3?.title || firstFoodItem3?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem3.image} alt={firstFoodItem3?.title}  />
-                                <p className="card-text">{firstFoodItem3.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem3.title,
-                                                10,
-                                                firstFoodItem3.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem4 &&
-                        <div className="card" key={firstFoodItem4}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem4?.title || firstFoodItem4?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem4.image} alt={firstFoodItem4?.title}  />
-                                <p className="card-text">{firstFoodItem4.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem4.title,
-                                                10,
-                                                firstFoodItem4.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem5 &&
-                        <div className="card" key={firstFoodItem5}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem5?.title || firstFoodItem5?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem5.image} alt={firstFoodItem5?.title}  />
-                                <p className="card-text">{firstFoodItem5.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem5.title,
-                                                10,
-                                                firstFoodItem5.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem6 &&
-                        <div className="card" key={firstFoodItem6}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem6?.title || firstFoodItem6?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem6.image} alt={firstFoodItem6?.title}  />
-                                <p className="card-text">{firstFoodItem6.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem6.title,
-                                                10,
-                                                firstFoodItem6.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem7 &&
-                        <div className="card" key={firstFoodItem7}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem7?.title || firstFoodItem7?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem7.image} alt={firstFoodItem7?.title}  />
-                                <p className="card-text">{firstFoodItem7.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem7.title,
-                                                10,
-                                                firstFoodItem7.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem8 &&
-                        <div className="card" key={firstFoodItem8}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem8?.title || firstFoodItem8?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem8.image} alt={firstFoodItem8?.title}  />
-                                <p className="card-text">{firstFoodItem8.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem8.title,
-                                                10,
-                                                firstFoodItem8.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem9 &&
-                        <div className="card" key={firstFoodItem9}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem9?.title || firstFoodItem9?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem9.image} alt={firstFoodItem9?.title}  />
-                                <p className="card-text">{firstFoodItem9.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem9.title,
-                                                10,
-                                                firstFoodItem9.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    }
-                    {firstFoodItem10 &&
-                        <div className="card" key={firstFoodItem10}>
-                            <div className="card-body">
-                                <h5 className="card-title"> {firstFoodItem10?.title || firstFoodItem10?.name} </h5>
-                                <img className="card-img-top" src={firstFoodItem10.image} alt={firstFoodItem10?.title}  />
-                                <p className="card-text">{firstFoodItem10.description}</p>
-                                <button className="btn btn-primary" onClick={()=>
-                                            addToItems(
-                                                firstFoodItem10.title,
-                                                10,
-                                                firstFoodItem10.image,
-                                            )}>{messages["add"]}
-                                </button>
-                            </div>
-                        </div>
-                    } */}
+                    </div>
                 </div>
 
                 {/*Panier*/}
@@ -382,7 +220,7 @@ const Produits = ({options}) => {
                                             </div>
                                         </div>
                                         <div className="supprime">
-                                            <button type="button" className="sup" onClick={() => removeFromItems(item.title, item.price)}>{messages["delete"]}</button>
+                                            <button type="button" className="btn btn-danger" onClick={() => removeFromItems(item.title, item.price)}>{messages["delete"]}</button>
                                         </div>
                                         <hr />
                                     </article>

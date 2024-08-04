@@ -1,13 +1,22 @@
 .platJour{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    /* background: skyblue; */
     box-sizing: border-box;
 
     width: 90%;
+    height: 30%;
     padding: 1em;
     margin: 0 auto;
     margin-top: 1em;
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+.speciale h1{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+img{
+    width: 30%;
 }

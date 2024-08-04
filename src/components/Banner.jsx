@@ -11,11 +11,6 @@ const Banner = (options, foodData) => {
     return(
         <div className="platJour">
             <Chat/>
-            {/* {banner.map(item=>(
-                <div className="speciale">
-                    <img src={item.image} alt="" srcset="" />
-                </div>
-            ))} */}
             <div className="speciale">
                 <h1>Plats du jour</h1>
                 <div className="plat">

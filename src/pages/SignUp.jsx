@@ -1,18 +1,17 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
-// import Bootstrap from "bootstrap";
 
-const Register = ()=>{
+const SignUp = ()=>{
     const [formData, setFormData] = useState({
         username:"",
-        text:"",
+        email:"",
         password:"",
     });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3000/register', {
+            const response = await fetch('http://localhost:8000/register', {
                 method: "POST",
                 headers: {
                     "Content-Type" : "application/json",
@@ -62,12 +61,12 @@ const Register = ()=>{
                         <input className="form-check-input p-1" type="checkbox" name="check" id="check" />
                         <label className="form-check-label p-1">You are agree to your terms and politices</label>
                     </div>
-                    <Link to="/accueil"><button className="btn btn-default bg-light border w-100">Log In</button></Link>
-
+                    <Link to="/login"><button className="btn btn-default bg-primary border w-100">Log In</button></Link>
+                    <Link to="/"><button className="btn btn-default bg-primary border w-100">Home</button></Link>
                 </form>
             </div>
         </div>
     )
 };
 
-export default Register;
+export default SignUp;
